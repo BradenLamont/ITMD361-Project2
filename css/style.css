@@ -16,7 +16,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.2em;
   text-transform: uppercase;
 }
 
@@ -134,7 +134,7 @@ footer {
 }
 
 #home main {
-  width: 90%;
+  width: 95%;
   margin: 2em auto;
 }
 
@@ -144,13 +144,13 @@ footer {
 }
 
 #home main img {
-  float: right;
-  width: 35%;
+  display: block;
+  width: 70%;
   padding: 5px;
   background-color: white;
   border: 4px solid #ff6a00;
   border-radius: 10px;
-  margin: 0 0 1em 1.5em;
+  margin: 0 auto 1em;
 }
 
 #home ol {
@@ -179,7 +179,7 @@ footer {
 }
 
 #mylife main {
-  width: 80%;
+  width: 95%;
   max-width: 900px;
   margin: 2em auto;
 }
@@ -350,19 +350,22 @@ footer {
   background-color: #f7f3ea;
 }
 
-@media screen and (max-width: 48em) {
+@media screen and (min-width: 48em) {
   h1 {
-    font-size: 2.2em;
+    font-size: 3em;
   }
 
-  #home main, #mylife main {
-    width: 95%;
+  #home main {
+    width: 90%;
+  }
+
+  #mylife main {
+    width: 80%;
   }
 
   #home main img {
-    float: none;
-    display: block;
-    width: 70%;
-    margin: 0 auto 1em;
+    float: right;
+    width: 35%;
+    margin: 0 0 1em 1.5em;
   }
 }
